@@ -3,7 +3,7 @@ package palindrome
 import "strings"
 
 
-func isPalindrome(input string) bool {
+func IsPalindrome(input string) bool {
 
 	input = strings.ToLower(input)
 	input = strings.ReplaceAll(input, " ", "")
@@ -11,11 +11,11 @@ func isPalindrome(input string) bool {
 	runes := []rune(input)
 
 	left := 0
-	right := len(runes)
+	right := len(runes) -1
 
 	for left < right {
 		if runes[left] != runes[right]{
-			return False
+			return false
 		}
 	left ++
 	right --
@@ -23,4 +23,3 @@ func isPalindrome(input string) bool {
 	return true
 }
 
-fmt.Println(isPalindrome("Terna"))

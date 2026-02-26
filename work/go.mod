@@ -1,3 +1,3 @@
-module newgo.go
+module work
 
 go 1.22.2
