@@ -7,7 +7,7 @@ Modify your palindrome function to:
     Return the position where the string stops being a palindrome (if not one).
 
 ANSWER 
-
+```py
         def is_palindrome(text):
             bypass = ''.join(c.lower() for c in text if c.isalnum())
 
@@ -51,11 +51,11 @@ ANSWER: Below is the AI response i got'
 
         return True, None
 
-
+```
 
 # Reflect on what AI added that you didn't consider initially.
     
-    After interacting with AI i understand more about time and space complexity and how it affects  codes and how my initial code to handle palindrome variations was creating a new string with this line "bypass = ''.join(c.lower() for c in text if c.isalnum()" such that if the input string has "n" characters it may take up extra memory leading to O(n)TIME and O(n)SPACE complexity,
+    After interacting with AI i understand more about time and space complexity and how it affects  codes and how my initial code to handle palindrome variations was creating a new string with this line "bypass = ''.join(c.lower()) for c in text if c.isalnum()" such that if the input string has "n" characters it may take up extra memory leading to O(n)TIME and O(n)SPACE complexity,
 
     With the AI the code is more enhanced because 
     Still O(n) time

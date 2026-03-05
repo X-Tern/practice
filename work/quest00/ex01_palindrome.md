@@ -24,7 +24,7 @@
 
 
 **Python inplementation of the solution.**
-
+```py
     def is_palindrome(text):
 
          # Start one pointer at the beginning of the string
@@ -58,7 +58,7 @@
 
     return True
 
-
+```
 
 
 # STEP 3.
@@ -68,7 +68,7 @@
 
     (2) QUESTION: How is your understanding different now?
         ANSWER: After using AI i got to understand that it isn't just about checking the characters in the string if they are thesame but also i need to clean the string if it behaves differently or contains other characters like spaces between words, also found out a shorter way to write the code as shown below.
-
+```py
         def is_palindrome(text):
             return text == text[::-1]
 
@@ -84,3 +84,4 @@
 
         print(is_palindrome("radar"))
         print(is_palindrome("Level"))
+```
